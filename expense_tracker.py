@@ -1,21 +1,9 @@
-#Question / Problem Statement: Create a console-based Expense Tracker program in Python that allows the user to record daily expenses and view summaries like total spending. Use only the concepts learned till Chapter 6qw(loops, conditionals, lists, dictionaries, and basic input/output).
-#Sample Output:
-#Welcome to Expense Tracker 💸
-#======= MENU =======
-#1️⃣Add Expense
-#2️⃣View All Expenses
-#3️⃣View Total Spending
-#4️⃣Exit
-#=====================
-#Enter your choice (1-4): 1
-#Enter date (DD-MM-YYYY): 05
-#category (Food, Travel, Shopping, etc): Food  
 
 #code begin here
 
 expenses=[]    # it is a list which contains all expenses 
 
-print('Welcome to GOLMAAL  EXPENSE TRACKER')
+print('Welcome to PERSONAL EXPENSE TRACKER')
 
 while (True):                                  #here the original project begins
     print('===== MENU =====')
@@ -67,7 +55,7 @@ while (True):                                  #here the original project begins
                     total=total +float( j['amount'])
                     print('Total amount = ',total,sep='')
     elif choice==4:
-         print('THANK YOU FOR USING GOLMAAL EXPENSE TRACKER')
+         print('THANK YOU FOR USING PERSONAL EXPENSE TRACKER')
          break
     else:
          print('invalid input try again')
